@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class HomeWorkTwo {
 
     public static void main(String[] args) {
@@ -64,7 +66,7 @@ public class HomeWorkTwo {
         }
         //System.out.println(max);
         // System.out.println(min);
-
+        taskSeven();
     }
     // Sixth task
     public static boolean taskSix() {
@@ -90,4 +92,27 @@ public class HomeWorkTwo {
 //            System.out.println();
 //        }
 //    }
+
+    // Получилось только сделать сдвиг на 1 ))
+    public static void taskSeven() {
+        int a = 1;
+        int[] arraySeven = {1, 2, 3, 4, 5, 6, 7, 8, 9,};
+        int b = arraySeven[0];
+        for (int i = 0; i < arraySeven.length  -a; i++) {
+            arraySeven[i] = arraySeven[i + a];
+            if (arraySeven[i + a] == arraySeven.length) {
+                arraySeven[arraySeven.length - a] = b;
+
+            }
+
+        }
+
+        System.out.println(Arrays.toString(arraySeven));
+    }
+
 }
+
+
+
+
+
