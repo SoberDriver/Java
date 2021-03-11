@@ -67,21 +67,24 @@ public class HomeWorkTwo {
         //System.out.println(max);
         // System.out.println(min);
         taskSeven();
+        System.out.println(taskSix());;
     }
     // Sixth task
     public static boolean taskSix() {
-        int[] arraySix = {1, 2, 3, 5, 1, 2, 3};
+        int[] arraySix = {1, 2, 3,};
         int left = 0;
-        int right = 0;
+
         for (int i = 0; i < arraySix.length; i++) {
             left += arraySix[i];
-            for (int j = arraySix.length + 1; j > 0; j--) {
+            int right = 0;
+            for (int j = arraySix.length - 1; j >= 0; j--) {
+
                 right += arraySix[j];
             }
             if (left == right) {
                 return true;
             }
-        } return true;
+        }return false;
     }
 
 //    public static void printArr(int [][] arr) {
